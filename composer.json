@@ -1,6 +1,7 @@
 {
   "name": "tna/tna-child-home",
   "description": "A short description of what your package does",
+  "homepage": "https://github.com/nationalarchives/theme_package/"
   "require": {
     "php": "^5.4.3 || ^7.0",
     "another-vendor/package": "1.*"
