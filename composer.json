@@ -2,7 +2,10 @@
   "name": "tna/tna-child-home",
   "description": "This is a custom wordpress theme to use as a child site for tna-base",
   "type": "wordpress-theme",
-  "homepage": "https://github.com/nationalarchives/tna-child-home",
+  "support": {
+    "source": "https://github.com/nationalarchives/tna-child-home"
+  },
+  "homepage": "https://www.nationalarchives.gov.uk/",
   "keywords": [
     "tna-base",
     "tna-base-child",
