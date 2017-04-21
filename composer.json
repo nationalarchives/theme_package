@@ -2,12 +2,20 @@
   "name": "tna/tna-child-home",
   "homepage": "https://github.com/nationalarchives/theme_package/",
   "licence" : "proprietary",
+  "authors" : [
+    {
+      "name" : "Punal Chotrani",
+      "email" : "punal.chotrani@nationalarchives.gsi.gov.uk",
+      "homepage" : "www.nationalarchives.gov.uk"
+    }
+  ],
   "description": "This is a custom wordpress theme to use as a child site for tna-base",
   "require": {
-    "php": "^5.4.3 || ^7.0",
+    "php": ">=5.4 || ^7.0",
     "another-vendor/package": "1.*"
   },
   "require-dev": {
     "phpunit/phpunit": "3.7.*"
-  }
+  },
+  "minimum-stability": "dev"
 }
