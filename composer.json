@@ -1,17 +1,8 @@
 {
   "name": "tna/tna-child-home",
   "description": "This is a custom wordpress theme to use as a child site for tna-base",
+  "type": "wordpress-theme",
   "homepage": "https://github.com/nationalarchives/tna-child-home",
-  "package": {
-    "name": "tna/tna-child-home",
-    "type": "wordpress-theme",
-    "version": "dev-master",
-    "source": {
-      "type": "git",
-      "url": "git@github.com:nationalarchives/tna-child-home.git",
-      "reference": "master"
-    }
-  },
   "keywords": [
     "tna-base",
     "tna-base-child",
