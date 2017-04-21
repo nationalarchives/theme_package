@@ -6,7 +6,7 @@
     "tna-base",
     "tna-base-child"
   ],
-  "licence" : "proprietary",
+  "license": "GPL-2.0+",
   "authors" : [
     {
       "name" : "Punal Chotrani",
