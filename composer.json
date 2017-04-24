@@ -3,6 +3,16 @@
   "description": "This is a custom wordpress theme to use as a child site for tna-base",
   "type": "wordpress-theme",
   "homepage": "https://www.nationalarchives.gov.uk/",
+  "package": {
+    "dist": {
+      "type": "zip",
+      "url": "https://github.com/nationalarchives/tna-base-child-template.git"
+    },
+    "require": {
+      "php": ">=5.4 || ^7.0",
+      "tna/tna-child-home": "dev-master"
+    }
+  },
   "keywords": [
     "tna-base",
     "tna-base-child",
@@ -17,8 +27,5 @@
       "homepage" : "https://www.nationalarchives.gov.uk/"
     }
   ],
-  "require": {
-    "php": ">=5.4 || ^7.0"
-  },
   "minimum-stability": "dev"
 }
