@@ -7,5 +7,5 @@
   "require-dev": {
     "wp-coding-standards/wpcs": "dev-master"
   },
-  "minimum-stability":"dev"
+  "minimum-stability":"master"
 }
