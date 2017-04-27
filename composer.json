@@ -7,10 +7,5 @@
   "require-dev": {
     "wp-coding-standards/wpcs": "dev-master"
   },
-  "minimum-stability":"dev-master",
-  "extra"       : {
-    "installer-paths": {
-      "wp-content/wp-content/themes/{$name}/" : ["type:wordpress-theme"]
-    }
-  }
+  "minimum-stability":"dev-master"
 }
