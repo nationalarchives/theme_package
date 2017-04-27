@@ -2,10 +2,19 @@
   "name": "tna/tna-base-child-template",
   "description": "This is a custom wordpress theme to use as a child site for tna-base as a dependency",
   "type": "wordpress-theme",
-  "keywords": ["wordpress"],
+  "keywords": [
+    "wordpress"
+  ],
   "license": "GPL-2.0",
   "require-dev": {
     "wp-coding-standards/wpcs": "dev-master"
   },
-  "minimum-stability":"dev"
+  "minimum-stability": "dev",
+  "extra": {
+    "installer-paths": {
+      "{%= site_slug %}/wp-content/themes/{$name}/": [
+        "type:wordpress-theme"
+      ]
+    }
+  }
 }
