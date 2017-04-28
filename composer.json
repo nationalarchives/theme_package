@@ -2,37 +2,23 @@
   "name": "tna/tna-base-child-template",
   "description": "This is a custom wordpress theme to use as a child site for tna-base as a dependency",
   "type": "wordpress-theme",
+  "require": {
+    "composer/installers": "~1.0.0"
+  },
+  "extra" : {
+    "installer-paths" : {
+      "{%= site_slug %}/wp-content/themes/{$name}/" : ["type:wordpress-theme"]
+    }
+  },
   "authors": [
     {
       "name": "Punal Chotrani",
       "email": "punal.chotrani@nationalarchives.gsi.gov.uk"
     }
   ],
-  "require": {
-    "composer/installers": "~1.0.0"
-  },
   "keywords": [
     "wordpress"
   ],
   "license": "GPL-2.0",
-  "minimum-stability": "dev",
-  "extra" : {
-    "installer-paths" : {
-      "{$name}/" : ["type:wordpress-theme"]
-    }
-  },
-  "repositories": [
-    {
-      "type": "package",
-      "package": {
-        "name": "tna/tna-base-child-template",
-        "version": "~1.0",
-        "type": "wordpress-theme",
-        "dist": {
-          "url": "https://github.com/nationalarchives/tna-base-child-template/archive/master.zip",
-          "type": "zip"
-        }
-      }
-    }
-  ]
+  "minimum-stability": "dev"
 }
