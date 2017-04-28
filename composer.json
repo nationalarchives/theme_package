@@ -5,11 +5,6 @@
   "require": {
     "composer/installers": "~1.0.0"
   },
-  "extra" : {
-    "installer-paths" : {
-      "{%= site_slug %}/wp-content/themes/{$name}/" : ["type:wordpress-theme"]
-    }
-  },
   "authors": [
     {
       "name": "Punal Chotrani",
