@@ -13,7 +13,7 @@
   "minimum-stability": "dev",
   "extra" : {
     "installer-paths" : {
-      "{%= site_slug %}/wp-content/themes/{$name}/": ["type:wordpress-theme"]
+      "wp-content/themes/{$name}/" : ["type:wordpress-theme"]
     }
   }
 }
