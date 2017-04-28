@@ -1,7 +1,7 @@
 {
   "name": "tna/tna-base-child-template",
   "description": "This is a custom wordpress theme to use as a child site for tna-base as a dependency",
-  "type": "wordpress-theme",
+  "type": "package",
   "authors": [
     {
       "name": "Punal Chotrani",
@@ -11,9 +11,12 @@
   "keywords": [
     "wordpress"
   ],
+  "require": {
+    "composer/installers": "~1.0"
+  },
   "extra" : {
     "installer-paths" : {
-      "{$name}/" : ["type:wordpress-theme"]
+      "wp-content/themes/{$name}/" : ["tna/tna-base-child-template"]
     }
   },
   "license": "GPL-2.0",
