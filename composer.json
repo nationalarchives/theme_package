@@ -1,22 +1,40 @@
 {
   "name": "tna/tna-base-child-template",
   "description": "This is a custom wordpress theme to use as a child site for tna-base as a dependency",
-  "type": "package",
+  "type": "wordpress-theme",
   "authors": [
     {
       "name": "Punal Chotrani",
       "email": "punal.chotrani@nationalarchives.gsi.gov.uk"
     }
   ],
+  "repositories": [
+    {
+      "type": "package",
+      "package": {
+        "require": {
+          "fancyguy/webroot-installer": "1.0.0"
+        }
+      }
+    },
+    {
+      "type":"composer",
+      "url":"https://packagist.org"
+    }
+  ],
   "keywords": [
     "wordpress"
   ],
   "require": {
-    "composer/installers": "~1.0"
+    "fancyguy/webroot-installer": "1.0.0"
   },
   "extra" : {
-    "installer-paths" : {
-      "wp-content/themes/{$name}/" : ["tna/tna-base-child-template"]
+    "webroot-dir": "public/wp",
+    "webroot-package": "wordpress",
+    "installer-paths": {
+      "public/content/themes/{$name}/": [
+        "type:wordpress-theme"
+      ]
     }
   },
   "license": "GPL-2.0",
