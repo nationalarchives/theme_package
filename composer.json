@@ -8,35 +8,21 @@
       "email": "punal.chotrani@nationalarchives.gsi.gov.uk"
     }
   ],
-  "repositories": [
-    {
-      "type": "package",
-      "package": {
-        "require": {
-          "fancyguy/webroot-installer": "1.0.0"
-        }
-      }
-    },
+  "repositories":[
     {
       "type":"composer",
-      "url":"https://packagist.org"
+      "url":"https://wpackagist.org"
     }
-  ],
-  "keywords": [
-    "wordpress"
   ],
   "require": {
-    "fancyguy/webroot-installer": "1.0.0"
+    "aws/aws-sdk-php":"*",
+    "wpackagist-plugin/akismet":"dev-trunk",
+    "wpackagist-plugin/captcha":">=3.9",
+    "wpackagist-theme/hueman":"*"
   },
-  "extra" : {
-    "webroot-dir": "public/wp",
-    "webroot-package": "wordpress",
-    "installer-paths": {
-      "public/content/themes/{$name}/": [
-        "type:wordpress-theme"
-      ]
+  "autoload": {
+    "psr-0": {
+      "Acme": "src/"
     }
-  },
-  "license": "GPL-2.0",
-  "minimum-stability": "dev"
+  }
 }
