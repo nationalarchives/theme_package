@@ -10,12 +10,12 @@
     }
   ],
   "require": {
-    "composer/installers" : "~1.0"
+    "fancyguy/webroot-installer": "1.0.0"
   },
-  "repositories":[
-    {
-      "type": "git",
-      "url": "https://github.com/nationalarchives/tna-base-child-template.git"
+  "extra": {
+    "webroot-dir": "site/wp",
+    "installer-paths": {
+      "site/wp-content/themes/{$name}/": ["type:wordpress-theme"]
     }
-  ]
+  }
 }
