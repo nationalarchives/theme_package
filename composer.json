@@ -9,21 +9,10 @@
       "email": "punal.chotrani@nationalarchives.gsi.gov.uk"
     }
   ],
-  "repositories":[
-    {
-      "type":"composer",
-      "url":"https://wpackagist.org"
-    }
-  ],
   "require": {
-    "aws/aws-sdk-php":"*",
-    "wpackagist-plugin/akismet":"dev-trunk",
-    "wpackagist-plugin/captcha":">=3.9",
-    "wpackagist-theme/hueman":"*"
+    "fancyguy/wordpress-monolog": "dev-master",
   },
-  "autoload": {
-    "psr-0": {
-      "Acme": "src/"
-    }
+  "extra": {
+    "wordpress-install-dir": "wp"
   }
 }
