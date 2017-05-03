@@ -1,7 +1,7 @@
 {
   "name": "tna/tna-base-child-template",
   "description": "This is a custom wordpress theme to use as a child site for tna-base as a dependency",
-  "type": "wordpress-theme",
+  "type": "package",
   "license": "GPL-2.0+",
   "authors": [
     {
@@ -10,10 +10,10 @@
     }
   ],
   "require": {
-    "fancyguy/webroot-installer": "1.0.0"
+    "composer/installers": "~1.0"
   },
   "extra": {
-    "webroot-dir": "site/wp",
+  "extra": {
     "installer-paths": {
       "site/wp-content/themes/{$name}/": ["type:wordpress-theme"]
     }
